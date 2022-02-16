@@ -1,12 +1,12 @@
 package com.sofka.crud.models;
 import javax.persistence.*;
 
-@Entity
-@Table(name = "usuario")
+@Entity//Le dice que es un modelo real
+@Table(name = "usuario")//El nombre de la tabla
 public class UsuarioModel {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true,nullable = false)
+    @Id//indica que es un id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//Auto incremental
+    @Column(unique = true,nullable = false)//valor unico y no null
     
     private Long id;
     private String nombre;

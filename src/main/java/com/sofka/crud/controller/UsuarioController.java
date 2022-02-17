@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping("/usuario")//Cuando coloque esta url me muestra los usuario
 public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;

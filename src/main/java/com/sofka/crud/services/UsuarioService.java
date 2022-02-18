@@ -26,6 +26,10 @@ public class UsuarioService {
  public Optional<UsuarioModel> obtenerPorId(Long id){
      return usuarioRepository.findById(id);
  }
+
+ public ArrayList<UsuarioModel> obtenerUsuarioPorMail(String email){
+     return usuarioRepository.findByEmail(email);
+ }
  
  public ArrayList<UsuarioModel> obtenerPorPrioridad(Integer prioridad){
      return usuarioRepository.findByPrioridad(prioridad);
